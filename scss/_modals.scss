@@ -1,0 +1,68 @@
+.modal {
+    position: fixed;
+    z-index: 500;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    .modal-content {
+        background-color: black;
+        background-image: url('../img/businessman-giving-hand-shake-2.jpg');
+        background-position: center;
+        background-size: cover;
+        width:500px;
+        margin: 0 auto;
+        position: relative;
+
+        .modal-dark-bg-wrapper {
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            margin: 0;
+            padding: 2em;
+            box-sizing: border-box;
+        }
+
+        .close-cross-btn {
+            color: white;
+            position: absolute;
+            right: -30px;
+            top: -20px;
+        }
+    }
+
+    form {
+        margin: 1em 0;
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 0;
+        }
+        input[type="tel"] {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            margin: 1em 0;
+            padding: 0.5em;
+            font-size: 1em;
+
+            &:focus {
+                outline-color: $primary-color;
+            }
+        }
+        button {
+            display: block;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    }
+}

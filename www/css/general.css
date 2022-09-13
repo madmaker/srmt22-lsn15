@@ -1,0 +1,447 @@
+@import url(../fonts/DINPro/stylesheet.css);
+@import url(../fonts/fontello-d3471606/css/fontello.css);
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "DIN Pro", sans-serif;
+  overflow: auto;
+}
+
+/* grid common styles*/
+.grid-wrapper {
+  display: grid;
+}
+
+/* -- grid common styles*/
+button {
+  background: #db545a;
+  border: #db545a solid 1px;
+  padding: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin: 2em 1em;
+  font-weight: bold;
+  transition: all ease-in 0.3s;
+}
+button:hover, button:focus, button:active {
+  background: #d21e27;
+  border-color: #d21e27;
+}
+button.btn-outline {
+  background: transparent;
+  border: white solid 1px;
+  color: white;
+}
+button.btn-outline:hover, button.btn-outline:focus, button.btn-outline:active {
+  background: black;
+  border-color: black;
+}
+
+header {
+  background-color: black;
+  background-image: url("../img/professional-programmer-working-late-dark-office-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 6em 1em;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  header {
+    padding: 2em 1em;
+  }
+}
+header h1 {
+  font-weight: normal;
+  font-size: 4em;
+  margin-top: 0;
+}
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+}
+header span {
+  font-weight: normal;
+  display: block;
+  font-size: 0.4em;
+}
+header nav ul {
+  font-size: 1.2em;
+  display: table;
+  list-style: none;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  header nav ul {
+    font-size: 1em;
+  }
+}
+header nav ul li {
+  float: left;
+}
+@media (max-width: 700px) {
+  header nav ul li {
+    float: none;
+  }
+}
+header nav ul li::after {
+  content: "|";
+  padding: 0 0.3em;
+}
+@media (max-width: 700px) {
+  header nav ul li::after {
+    display: none;
+  }
+}
+header nav ul li:last-child::after {
+  content: "";
+}
+
+a.freepick-link {
+  color: white;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+
+main section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main h2 {
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  main h2 {
+    font-size: 1.3em;
+  }
+}
+
+#study-order article {
+  max-width: 900px;
+  margin: 4em auto;
+  padding: 2em;
+  border: solid 1px #478ac9;
+  transition: all ease-in 0.3s;
+}
+@media (max-width: 600px) {
+  #study-order article {
+    margin: 0 auto;
+    padding: 1em;
+  }
+}
+#study-order article:hover, #study-order article:focus {
+  border-color: #db545a;
+}
+#study-order article h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #478ac9;
+  transition: all ease-in 0.3s;
+}
+@media (max-width: 400px) {
+  #study-order article h3 {
+    font-size: 1em;
+  }
+}
+#study-order article:hover h3, #study-order article:focus h3 {
+  color: #db545a;
+}
+#study-order article p:last-child {
+  text-align: right;
+  line-height: 1.5em;
+}
+#study-order article .icon {
+  font-size: 4em;
+  color: #478ac9;
+  transition: all ease-in 0.3s;
+}
+@media (max-width: 600px) {
+  #study-order article .icon {
+    font-size: 2em;
+    line-height: 2.5em;
+  }
+}
+#study-order article:hover .icon, #study-order article:focus .icon {
+  color: #db545a;
+}
+#study-order .grid-wrapper {
+  grid-template-columns: 1fr 5fr;
+}
+
+#start-education-today {
+  color: white;
+  background-color: black;
+  background-image: url("../img/saas-concept-collage-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+}
+#start-education-today > div {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 0;
+}
+#start-education-today .grid-wrapper {
+  margin: 0;
+  padding: 4em 0;
+  grid-template-columns: 2fr 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  #start-education-today .grid-wrapper {
+    padding: 4em 2em;
+  }
+}
+@media (max-width: 800px) {
+  #start-education-today .grid-wrapper {
+    padding: 1em 2em;
+  }
+}
+@media (max-width: 800px) {
+  #start-education-today .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+#start-education-today h3 {
+  font-size: 2em;
+  font-weight: normal;
+}
+#start-education-today p {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+@media (max-width: 400px) {
+  #what-do-we-study {
+    display: none;
+  }
+}
+#what-do-we-study .grid-wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 900px) {
+  #what-do-we-study .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+#what-do-we-study article {
+  padding: 2em 0 3em 0;
+}
+#what-do-we-study h3 {
+  font-size: 2em;
+  font-weight: normal;
+  text-align: center;
+}
+#what-do-we-study ul {
+  list-style: none;
+}
+#what-do-we-study li {
+  border: solid #333 1px;
+  border-radius: 20px;
+  width: auto;
+  display: block;
+  float: left;
+  margin: 5px 2px;
+  padding: 5px 10px;
+}
+#what-do-we-study aside {
+  background-image: url("../img/business-serious-manager-working-laptop-standing.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+@media (max-width: 900px) {
+  #what-do-we-study aside {
+    display: none;
+  }
+}
+
+#promo-block-2 {
+  background-color: black;
+  background-image: url("../img/hologram-projector-screen-with-cloud-system-technology-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  #promo-block-2 {
+    display: none;
+  }
+}
+#promo-block-2 > div {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+}
+#promo-block-2 section {
+  padding: 4em 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+#promo-block-2 .grid-wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 500px) {
+  #promo-block-2 .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+#promo-block-2 h3 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+#promo-block-2 h4 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
+#lessons-gallery h2 {
+  margin: 1em 0;
+}
+#lessons-gallery .grid-wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 3em;
+  row-gap: 3em;
+}
+@media (max-width: 1000px) {
+  #lessons-gallery .grid-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 700px) {
+  #lessons-gallery .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+#lessons-gallery figure {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#lessons-gallery img {
+  max-width: 300px;
+  margin-bottom: 1em;
+}
+
+footer {
+  color: white;
+  background: rgb(57, 57, 57);
+}
+footer a,
+footer a:visited,
+footer a:focus,
+footer a:hover,
+footer a:active {
+  color: white;
+  text-decoration: none;
+}
+footer .grid-wrapper {
+  padding: 3em 2em;
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+@media (max-width: 601px) {
+  footer .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+footer .footer-info {
+  padding: 0.5em 0;
+}
+footer .footer-info p {
+  line-height: 1em;
+}
+footer .footer-logo {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.5em 0;
+}
+footer .footer-links {
+  text-align: center;
+  padding: 0.5em 0;
+}
+footer .footer-links img {
+  max-width: 50px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.modal .modal-content {
+  background-color: black;
+  background-image: url("../img/businessman-giving-hand-shake-2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.modal .modal-content .modal-dark-bg-wrapper {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 2em;
+  box-sizing: border-box;
+}
+.modal .modal-content .close-cross-btn {
+  color: white;
+  position: absolute;
+  right: -30px;
+  top: -20px;
+}
+.modal form {
+  margin: 1em 0;
+}
+.modal form label {
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+.modal form input[type=tel] {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.modal form input[type=tel]:focus {
+  outline-color: #db545a;
+}
+.modal form button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=general.css.map */

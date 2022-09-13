@@ -1,0 +1,30 @@
+button {
+    background: $primary-color;
+    border: $primary-color solid 1px;
+    padding: 1em;
+    color: white;
+    text-transform: uppercase;
+    margin: 2em 1em;
+    font-weight: bold;
+    transition: all ease-in 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: $primary-color-focus;
+        border-color: $primary-color-focus;
+    }
+
+    &.btn-outline {
+        background: transparent;
+        border: white solid 1px;
+        color: white;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            background: black;
+            border-color:black;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$primary-color: #db545a;
+$primary-color-focus: #d21e27;
+
+$secondary-color: #478ac9;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "DIN Pro", sans-serif;
+    overflow: auto;
+}
+
+/* grid common styles*/
+.grid-wrapper {
+    display: grid;
+}
+/* -- grid common styles*/
+
+@import 'ui-elements';
+@import 'homepage';
+@import 'footer.scss';
+@import 'modals.scss';
+
+@import url(../fonts/DINPro/stylesheet.css);
+@import url(../fonts/fontello-d3471606/css/fontello.css);

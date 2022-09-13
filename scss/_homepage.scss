@@ -1,0 +1,286 @@
+header {
+    background-color: black;
+    background-image: url("../img/professional-programmer-working-late-dark-office-2.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    color: white;
+    padding:6em 1em;
+    @media (max-width:400px) {
+        padding:2em 1em;
+    }
+    text-align: center;
+
+    h1 {
+        font-weight: normal;
+        font-size: 4em;
+        @media (max-width:700px) {
+            font-size: 2.5em;
+        }
+        @media (max-width:400px) {
+            font-size: 1.8em;
+        }
+        margin-top: 0;
+    }
+    span {
+        font-weight: normal;
+        display: block;
+        font-size: 0.4em;
+    }
+    nav {
+        ul {
+            font-size: 1.2em;
+            @media (max-width:400px) {
+                font-size: 1em;
+            }
+            display: table;
+            list-style: none;
+            margin: 0 auto;
+
+            li {
+                float: left;
+                @media (max-width:700px) {
+                    float: none;
+                }
+                
+                &::after {
+                    content: '|';
+                    padding: 0 0.3em;
+                    @media (max-width:700px) {
+                        display: none;
+                    }
+                }
+                &:last-child::after {
+                content: '';
+                }
+            }
+        }
+    }
+}
+  
+a.freepick-link {
+    color: white;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
+main {
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 2em;
+        @media (max-width:700px) {
+            font-size: 1.3em;
+        }
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+#study-order {
+    article {
+        max-width: 900px;
+        margin: 4em auto;
+        padding: 2em;
+        @media (max-width:600px) {
+            margin:0 auto;
+            padding: 1em;
+        }
+        border: solid 1px $secondary-color;
+        transition: all ease-in 0.3s;
+
+        &:hover,
+        &:focus {
+            border-color: $primary-color;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            @media (max-width:400px) {
+                font-size: 1em;
+            }
+            font-weight: normal;
+            color: $secondary-color;
+            transition: all ease-in 0.3s;
+        }
+
+        &:hover h3,
+        &:focus h3 {
+            color: $primary-color;
+        }
+        p:last-child {
+            text-align: right;
+            line-height: 1.5em;
+        }
+
+        .icon {
+            font-size: 4em;
+            @media (max-width:600px) {
+                font-size: 2em;                
+                line-height: 2.5em;
+            }
+            color: $secondary-color;
+            transition: all ease-in 0.3s;
+        }
+
+          &:hover .icon,
+          &:focus .icon {
+            color: $primary-color;
+        }
+    }
+
+    .grid-wrapper{
+        grid-template-columns: 1fr 5fr;
+    }
+}
+
+#start-education-today {
+    color: white;
+    background-color: black;
+    background-image: url("../img/saas-concept-collage-2.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    padding: 0;
+
+    >div {
+        background: rgba(0,  0, 0, 0.5);
+        width: 100%;
+        margin:0;
+    }
+    .grid-wrapper {
+        margin: 0;
+        padding: 4em 0;
+        @media (max-width:1000px) {
+            padding:4em 2em;
+        }
+        @media (max-width:800px) {
+            padding:1em 2em;
+        }
+        grid-template-columns: 2fr 1fr;
+        @media (max-width:800px) {
+            grid-template-columns: 1fr;
+        }
+        max-width: 900px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-weight: normal;
+    }
+    p {
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+}
+
+#what-do-we-study {
+    @media (max-width:400px) {
+        display: none;
+    }
+    .grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        @media (max-width:900px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    article {
+        padding: 2em 0 3em 0;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: normal;
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        border: solid #333 1px;
+        border-radius: 20px;
+        width: auto;
+        display: block;
+        float: left;
+        margin: 5px 2px;
+        padding: 5px 10px;
+    }
+    aside {
+        background-image: url("../img/business-serious-manager-working-laptop-standing.jpg");
+        background-size: cover;
+        background-position: center center;
+        @media (max-width:900px) {
+            display: none;
+        }
+    }
+}
+
+#promo-block-2 {
+    background-color: black;
+    background-image: url('../img/hologram-projector-screen-with-cloud-system-technology-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+
+    @media (max-width:400px) {
+        display: none;
+    }
+
+    >div {
+        background: rgba(0,  0, 0, 0.5);
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        padding: 4em 0;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+    .grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        @media (max-width:500px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: normal;
+        margin: 0.5em 0;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin: 0.5em 0;
+    }
+}
+
+#lessons-gallery {
+    h2 {
+        margin: 1em 0;
+    }
+    .grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (max-width:1000px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width:700px) {
+            grid-template-columns: 1fr;
+        }
+        margin-bottom: 3em;
+        row-gap: 3em;
+    }
+    figure{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 300px;
+        margin-bottom: 1em;
+    }
+}

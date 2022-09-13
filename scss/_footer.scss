@@ -1,0 +1,46 @@
+footer {
+    color:white;
+    background:rgb(57, 57, 57);
+
+    a,
+    a:visited,
+    a:focus,
+    a:hover,
+    a:active {
+        color:white;
+        text-decoration: none;
+    }
+    .grid-wrapper {
+        padding: 3em 2em;
+        margin: 0 auto;
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+
+        @media (max-width:601px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .footer-info {
+        padding: 0.5em 0;
+        
+        p {
+            line-height: 1em;
+        }
+    }
+
+    .footer-logo {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+    .footer-links {
+        text-align: center;
+        padding: 0.5em 0;
+        
+        img {
+            max-width: 50px;
+        }
+    }
+}
